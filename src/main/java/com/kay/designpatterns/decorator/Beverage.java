@@ -6,6 +6,9 @@ package com.kay.designpatterns.decorator;
  */
 public abstract class Beverage {
 
+    public enum Size { TALL, GRANDE, VENTI }
+    Size size = Size.TALL;
+
     private String description = "Unknown Beverage";
 
     public abstract double cost();
@@ -14,4 +17,10 @@ public abstract class Beverage {
         return this.description;
     }
 
+    public void setSize(Size size) {
+        this.size = size;
+    }
+    public Size getSize() {
+        return this.size;
+    }
 }
