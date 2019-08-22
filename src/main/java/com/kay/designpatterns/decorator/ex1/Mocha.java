@@ -5,10 +5,8 @@ package com.kay.designpatterns.decorator.ex1;
  */
 public class Mocha extends CondimentDecorator {
 
-    private Beverage beverage;
-
     public Mocha(Beverage beverage) {
-        this.beverage = beverage;
+        super(beverage);
     }
 
     @Override

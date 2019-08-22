@@ -5,10 +5,8 @@ package com.kay.designpatterns.decorator.ex1;
  */
 public class Milk extends CondimentDecorator {
 
-    private Beverage beverage;
-
     public Milk(Beverage beverage) {
-        this.beverage = beverage;
+        super(beverage);
     }
 
     @Override
