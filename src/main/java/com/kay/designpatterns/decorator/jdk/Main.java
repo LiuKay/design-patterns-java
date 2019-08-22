@@ -24,6 +24,16 @@ public class Main {
         InputStreamReader reader = new InputStreamReader(bufferedInputStream);
         BufferedReader bufferedReader = new BufferedReader(reader);
         String s = bufferedReader.readLine();
+        bufferedReader.close();
         System.out.println(s);
+
+
+        // test lower case inputStream
+        String test = "TEST";
+        MyLowerCaseInputStream lowerCaseInputStream = new MyLowerCaseInputStream(new ByteArrayInputStream(test.getBytes()));
+        byte[] bytes1 = new byte[test.getBytes().length];
+        lowerCaseInputStream.read(bytes1, 0, bytes1.length);
+        lowerCaseInputStream.close();
+        System.out.println(new String(bytes1));
     }
 }
