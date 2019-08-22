@@ -1,4 +1,4 @@
-package com.kay.designpatterns.observer;
+package com.kay.designpatterns.observer.ex1;
 
 /**
  * The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state,

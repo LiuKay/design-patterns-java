@@ -1,4 +1,4 @@
-package com.kay.designpatterns.decorator;
+package com.kay.designpatterns.decorator.ex1;
 
 /**
  * 浓咖啡

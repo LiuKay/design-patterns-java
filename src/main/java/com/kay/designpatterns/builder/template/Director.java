@@ -1,4 +1,4 @@
-package com.kay.designpatterns.builder;
+package com.kay.designpatterns.builder.template;
 
 
 public class Director {

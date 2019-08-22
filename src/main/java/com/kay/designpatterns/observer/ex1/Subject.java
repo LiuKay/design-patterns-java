@@ -1,4 +1,4 @@
-package com.kay.designpatterns.observer;
+package com.kay.designpatterns.observer.ex1;
 
 /**
  * 主题接口

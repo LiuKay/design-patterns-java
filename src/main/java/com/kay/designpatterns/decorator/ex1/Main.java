@@ -1,4 +1,4 @@
-package com.kay.designpatterns.decorator;
+package com.kay.designpatterns.decorator.ex1;
 
 /**
  * 模拟场景： Beverage饮品类下有不同的饮料类型，每种饮料都会添加不同配料 Condiment，这些配料可以任意搭配。

@@ -1,4 +1,4 @@
-package com.kay.designpatterns.observer;
+package com.kay.designpatterns.observer.ex1;
 
 import java.util.ArrayList;
 import java.util.List;

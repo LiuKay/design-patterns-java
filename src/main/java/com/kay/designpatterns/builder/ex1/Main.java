@@ -1,4 +1,4 @@
-package com.kay.designpatterns.builder.connectionbuilder;
+package com.kay.designpatterns.builder.ex1;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

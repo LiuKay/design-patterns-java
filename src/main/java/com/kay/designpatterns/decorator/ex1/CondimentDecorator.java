@@ -1,4 +1,4 @@
-package com.kay.designpatterns.decorator;
+package com.kay.designpatterns.decorator.ex1;
 
 /**
  * 每种饮品都会加的调味品，故设计成 Decorator ，可以叠加
