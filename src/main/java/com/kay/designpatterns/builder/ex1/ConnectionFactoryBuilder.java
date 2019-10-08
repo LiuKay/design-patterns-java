@@ -20,8 +20,8 @@ public class ConnectionFactoryBuilder {
         return new ConnectionFactoryBuilder();
     }
 
-    public ConnectionFactory build() {
-        return new ConnectionFactory(dataSource);
+    public ConnectionFactoryImpl build() {
+        return new ConnectionFactoryImpl(dataSource);
     }
 
     public ConnectionFactoryBuilder setDriverClassName(String driverClassName) {
@@ -44,15 +44,18 @@ public class ConnectionFactoryBuilder {
         return this;
     }
 
-    static class ConnectionFactory{
+    /**
+     * This class is transparent for the client.
+     */
+    private static class ConnectionFactoryImpl implements ConnectionFactory {
 
         private DataSource dataSource;
 
-        private ConnectionFactory(DataSource dataSource) {
+        private ConnectionFactoryImpl(DataSource dataSource) {
             this.dataSource = dataSource;
         }
 
-        Connection getConnection() throws SQLException {
+        public Connection getConnection() throws SQLException {
             return dataSource.getConnection();
         }
 
@@ -64,7 +67,4 @@ public class ConnectionFactoryBuilder {
             this.dataSource = dataSource;
         }
     }
-
-
-
 }

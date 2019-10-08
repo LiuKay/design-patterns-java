@@ -24,21 +24,17 @@ public class Main {
         dataSource.close();
         //*******************
 
-        // builder + factory
-        ConnectionFactoryBuilder.ConnectionFactory connectionFactory = ConnectionFactoryBuilder.builder()
-                                                                                   .setUrl("XXX")
-                                                                                   .setUsername("root")
-                                                                                   .setPassword("root")
-                                                                                   .setDriverClassName(
-                                                                                           "com.mysql.jdbc.Driver")
-                                                                                   .build();
+        // builder + factory interface
+        // ConnectionFactoryImpl 对客户端来说是透明的，使用者只需关心接口方法而已，无需关心实现细节
+        ConnectionFactory connectionFactory = ConnectionFactoryBuilder.builder()
+                                                                      .setUrl("XXX")
+                                                                      .setUsername("root")
+                                                                      .setPassword("root")
+                                                                      .setDriverClassName(
+                                                                              "com.mysql.jdbc.Driver")
+                                                                      .build();
         Connection newConn = connectionFactory.getConnection();
-        // do some things.
+        // do some things with newConn
 
-
-//        BasicDataSourceFactory dataSourceFactory = new BasicDataSourceFactory();
-//        BasicDataSource xx = BasicDataSourceFactory.createDataSource(new Properties());
-        DataSourceConnectionFactory factory = new DataSourceConnectionFactory(new BasicDataSource());
-        Connection connection1 = factory.createConnection();
     }
 }
