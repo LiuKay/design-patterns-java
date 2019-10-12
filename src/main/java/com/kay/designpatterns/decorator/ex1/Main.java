@@ -8,14 +8,14 @@ package com.kay.designpatterns.decorator.ex1;
  */
 public class Main {
     public static void main(String[] args) {
-        Beverage espresso = new Mocha(new Espresso());
+        AbstractBeverage espresso = new Mocha(new Espresso());
         System.out.println(espresso.getDescription() + ", cost:" + espresso.cost());
 
-        Beverage mocha2 = new Mocha(new Mocha(new Espresso()));
+        AbstractBeverage mocha2 = new Mocha(new Mocha(new Espresso()));
         System.out.println(mocha2.getDescription() + ", cost:" + mocha2.cost());
 
 
-        Beverage milkMochaCoffee = new Milk(new Espresso());
+        AbstractBeverage milkMochaCoffee = new Milk(new Espresso());
         System.out.println(milkMochaCoffee.getDescription() + ", cost:" + milkMochaCoffee.cost());
     }
 }

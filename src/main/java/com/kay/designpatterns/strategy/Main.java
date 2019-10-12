@@ -1,6 +1,6 @@
 package com.kay.designpatterns.strategy;
 
-import com.kay.designpatterns.strategy.ex1.Duck;
+import com.kay.designpatterns.strategy.ex1.AbstractDuck;
 import com.kay.designpatterns.strategy.ex1.ModelDuck;
 
 /**
@@ -16,7 +16,7 @@ import com.kay.designpatterns.strategy.ex1.ModelDuck;
  */
 public class Main {
     public static void main(String[] args) {
-        Duck model = new ModelDuck();
+        AbstractDuck model = new ModelDuck();
         model.swim();
         model.fly();
         model.quack();

@@ -3,21 +3,21 @@ package com.kay.designpatterns.decorator.template;
 /**
  * Created by Kai.L on 8/22/2019
  */
-public class Decorator extends Component {
+public class Decorator extends AbstractComponent {
 
-    protected Component component;
+    AbstractComponent component;
 
-    public Decorator(Component component) {
+    public Decorator(AbstractComponent component) {
         this.component = component;
     }
 
     @Override
-    public void methodA() {
-        this.component.methodA();
+    void methoda() {
+        this.component.methoda();
     }
 
     @Override
-    public void methodB() {
-        this.component.methodB();
+    void methodb() {
+        this.component.methodb();
     }
 }

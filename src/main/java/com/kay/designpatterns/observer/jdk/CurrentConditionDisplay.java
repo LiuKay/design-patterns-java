@@ -6,14 +6,14 @@ import java.util.Observer;
 /**
  * Created by Kai.L on 8/6/2019
  */
-public class CurrentConditionDisplay implements Observer {
+class CurrentConditionDisplay implements Observer {
 
     private float temperature;
     private float humidity;
 
     private Observable observable;
 
-    public CurrentConditionDisplay(Observable observable) {
+    CurrentConditionDisplay(Observable observable) {
         this.observable = observable;
         observable.addObserver(this);
     }
@@ -28,7 +28,7 @@ public class CurrentConditionDisplay implements Observer {
         }
     }
 
-    public void display() {
+    private void display() {
         System.out.println(String.format("当前天气情况：温度%s度, 湿度%s", this.temperature, this.humidity));
     }
 }

@@ -3,7 +3,7 @@ package com.kay.designpatterns.observer.ex1;
 /**
  * Created by Kai.L on 8/5/2019
  */
-public class StatisticsDisplay implements Observer,Display {
+class StatisticsDisplay implements Observer, Display {
 
     private Subject weatherData;
 
@@ -11,13 +11,14 @@ public class StatisticsDisplay implements Observer,Display {
     private float humidity;
     private float pressure;
 
-    public StatisticsDisplay(Subject weatherData) {
+    StatisticsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
     @Override
     public void update(float temp, float humidity, float pressure) {
+        System.out.println("StatisticsDisplay is notified ..");
         this.humidity = humidity;
         this.temp = temp;
         this.pressure = pressure;

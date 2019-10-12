@@ -3,9 +3,9 @@ package com.kay.designpatterns.decorator.ex1;
 /**
  * Created by Kai.L on 8/14/2019
  */
-public class Mocha extends CondimentDecorator {
+class Mocha extends AbstractCondimentDecorator {
 
-    public Mocha(Beverage beverage) {
+    Mocha(AbstractBeverage beverage) {
         super(beverage);
     }
 
@@ -22,6 +22,8 @@ public class Mocha extends CondimentDecorator {
                 break;
             case VENTI:
                 cost += 0.2;
+                break;
+            default:
                 break;
         }
         return cost;

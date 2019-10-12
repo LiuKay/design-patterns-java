@@ -3,7 +3,7 @@ package com.kay.designpatterns.observer.ex1;
 /**
  * Created by Kai.L on 8/5/2019
  */
-public class CurrentConditionDisplay implements Observer,Display {
+class CurrentConditionDisplay implements Observer, Display {
 
     // 订阅对象
     private Subject subject;
@@ -11,13 +11,15 @@ public class CurrentConditionDisplay implements Observer,Display {
     private float temperature;
     private float humidity;
 
-    public CurrentConditionDisplay(Subject subject) {
+    CurrentConditionDisplay(Subject subject) {
         this.subject = subject;
         subject.registerObserver(this);
     }
 
     @Override
     public void update(float temp, float humidity, float pressure) {
+        System.out.println("CurrentConditionDisplay is notified ..");
+
         this.temperature = temp;
         this.humidity = humidity;
         display();

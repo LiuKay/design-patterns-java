@@ -4,20 +4,20 @@ package com.kay.designpatterns.decorator.template;
  * Created by Kai.L on 8/22/2019
  */
 public class ConcreteDecoratorB extends Decorator {
-    public ConcreteDecoratorB(Component component) {
+    ConcreteDecoratorB(AbstractComponent component) {
         super(component);
     }
 
     @Override
-    public void methodA() {
+    public void methoda() {
         // do sth.
         System.out.println("DecoratorB do sth. with methodA.");
-        this.component.methodA();
+        this.component.methoda();
     }
 
     @Override
-    public void methodB() {
+    public void methodb() {
         System.out.println("DecoratorB do sth. with methodB.");
-        this.component.methodB();
+        this.component.methodb();
     }
 }

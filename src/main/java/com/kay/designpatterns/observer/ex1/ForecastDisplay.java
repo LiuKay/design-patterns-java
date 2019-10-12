@@ -3,19 +3,21 @@ package com.kay.designpatterns.observer.ex1;
 /**
  * Created by Kai.L on 8/5/2019
  */
-public class ForecastDisplay implements Observer,Display {
+class ForecastDisplay implements Observer, Display {
 
     private Subject weatherData;
 
     private float temp;
 
-    public ForecastDisplay(Subject weatherData) {
+    ForecastDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
 
     @Override
     public void update(float temp, float humidity, float pressure) {
+        System.out.println("ForecastDisplay is notified ..");
+
         this.temp = temp + 1.2f;
         display();
     }

@@ -4,7 +4,7 @@ package com.kay.designpatterns.decorator.ex1;
  * 浓咖啡
  * Created by Kai.L on 8/14/2019
  */
-public class Espresso extends Beverage {
+class Espresso extends AbstractBeverage {
 
     @Override
     public String getDescription() {

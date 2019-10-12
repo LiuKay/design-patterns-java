@@ -3,11 +3,11 @@ package com.kay.designpatterns.decorator.template;
 /**
  * Created by Kai.L on 8/22/2019
  */
-public abstract class Component {
+abstract class AbstractComponent {
 
-    public abstract void methodA();
+    abstract void methoda();
 
-    public abstract void methodB();
+    abstract void methodb();
 
     // other methods
 }

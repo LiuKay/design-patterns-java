@@ -3,7 +3,7 @@ package com.kay.designpatterns.decorator.ex1;
 /**
  * Created by Kai.L on 8/14/2019
  */
-public class HouseBlend extends Beverage {
+class HouseBlend extends AbstractBeverage {
     @Override
     public String getDescription() {
         return "HouseBlend";

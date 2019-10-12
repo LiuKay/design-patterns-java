@@ -5,9 +5,9 @@ package com.kay.designpatterns.decorator.template;
  */
 public class Main {
     public static void main(String[] args) {
-        Component component = new ConcreteComponent();
-        ConcreteDecoratorA decoratorA = new ConcreteDecoratorA(component);
-        ConcreteDecoratorB decoratorB = new ConcreteDecoratorB(decoratorA);
-        decoratorB.methodA();
+        AbstractComponent component = new ConcreteComponent();
+        ConcreteDecoratorA decoratora = new ConcreteDecoratorA(component);
+        ConcreteDecoratorB decoratorb = new ConcreteDecoratorB(decoratora);
+        decoratorb.methoda();
     }
 }

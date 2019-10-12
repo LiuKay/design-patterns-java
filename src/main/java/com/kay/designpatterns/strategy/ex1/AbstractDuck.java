@@ -3,13 +3,13 @@ package com.kay.designpatterns.strategy.ex1;
 /**
  * Created by Kai.L on 8/28/2019
  */
-public abstract class Duck {
+public abstract class AbstractDuck {
 
-    protected ISwim swim;
+    ISwim swim;
 
-    protected IFly fly;
+    IFly fly;
 
-    protected IQuack quack;
+    IQuack quack;
 
     public void quack(){
         this.quack.quack();

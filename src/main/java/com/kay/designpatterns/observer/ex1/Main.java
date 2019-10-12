@@ -17,6 +17,8 @@ public class Main {
 
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();
+
+        // Register weatherData to the following three Observers.
         CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay(weatherData);
         ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
         StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);

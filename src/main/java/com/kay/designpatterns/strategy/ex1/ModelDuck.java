@@ -3,7 +3,7 @@ package com.kay.designpatterns.strategy.ex1;
 /**
  * Created by Kai.L on 8/28/2019
  */
-public class ModelDuck extends Duck {
+public class ModelDuck extends AbstractDuck {
 
     public ModelDuck() {
         this.fly = new LeftFly();

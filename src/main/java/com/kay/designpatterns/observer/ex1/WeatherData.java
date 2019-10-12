@@ -35,11 +35,11 @@ public class WeatherData implements Subject{
     /**
      * 当状态改变时自动触发此方法
      */
-    public void measurementsChanged() {
+    private void measurementsChanged() {
         this.notifyObserver();
     }
 
-    public void setStates(float temperature, float humidity, float pressure) {
+    void setStates(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;

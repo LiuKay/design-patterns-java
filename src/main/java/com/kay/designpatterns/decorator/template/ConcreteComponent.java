@@ -3,14 +3,14 @@ package com.kay.designpatterns.decorator.template;
 /**
  * Created by Kai.L on 8/22/2019
  */
-public class ConcreteComponent extends Component {
+class ConcreteComponent extends AbstractComponent {
     @Override
-    public void methodA() {
+    void methoda() {
         System.out.println("concrete mA");
     }
 
     @Override
-    public void methodB() {
+    void methodb() {
         System.out.println("concrete mB");
     }
 }

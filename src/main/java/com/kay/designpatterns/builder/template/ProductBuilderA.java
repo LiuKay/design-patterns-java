@@ -1,8 +1,8 @@
 package com.kay.designpatterns.builder.template;
 
-public class AProductBuilder implements Builder {
+class ProductBuilderA implements Builder {
 
-    Product product = new Product();
+    private Product product = new Product();
 
     @Override
     public void setPart1() {

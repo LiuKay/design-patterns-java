@@ -3,9 +3,9 @@ package com.kay.designpatterns.decorator.ex1;
 /**
  * Created by Kai.L on 8/14/2019
  */
-public class Milk extends CondimentDecorator {
+class Milk extends AbstractCondimentDecorator {
 
-    public Milk(Beverage beverage) {
+    Milk(AbstractBeverage beverage) {
         super(beverage);
     }
 
