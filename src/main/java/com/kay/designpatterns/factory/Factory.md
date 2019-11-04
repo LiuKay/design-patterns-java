@@ -18,3 +18,6 @@ SimplePizzaFactory 作为一个简单的对象工厂，将所有的产品(Pizza)
 ![](./factory-method.png)
 如上图所示，PizzaStore 作为一个抽象创建者定义了一个抽象方法，让子类实现类生产具体的对象实例。
 
+
+#### 抽象工厂模式 Abstract Factory Pattern
+提供一个接口，用于创建相关或依赖的家族，而不需要明确指定具体类。
