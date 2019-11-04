@@ -19,4 +19,9 @@ public class CheesePizza implements Pizza {
     public void cut() {
         System.out.println("CheesePizza cut");
     }
+
+    @Override
+    public void box() {
+        System.out.println("box CheesePizza");
+    }
 }

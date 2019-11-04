@@ -1,24 +1,24 @@
-package com.kay.designpatterns.factory.simplefactory;
+package com.kay.designpatterns.factory.factorymethod;
 
-import com.kay.designpatterns.factory.CheesePizza;
 import com.kay.designpatterns.factory.Pizza;
 import com.kay.designpatterns.factory.PizzaType;
-import com.kay.designpatterns.factory.VeggiePizza;
 
 /**
  * @author Kai Liu
  * @date 11/1/2019
  **/
-class SimplePizzaFactory {
+class NYPizzaStore extends PizzaStore{
 
-    Pizza createPizza(PizzaType type){
+    @Override
+    public Pizza createPizza(PizzaType type) {
         Pizza pizza = null;
         switch (type) {
             case CheesePizza:
-                pizza = new CheesePizza();
+                pizza = new NYCheesePizza();
                 break;
             case VeggiePizza:
-                pizza = new VeggiePizza();
+                // 其他类似。。。
+                pizza = new NYVeggiePizza();
                 break;
             default:
                 System.err.println("Unknown pizza type.");
@@ -26,5 +26,4 @@ class SimplePizzaFactory {
         }
         return pizza;
     }
-
 }

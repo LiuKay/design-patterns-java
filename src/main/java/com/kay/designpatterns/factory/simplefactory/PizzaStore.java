@@ -2,6 +2,7 @@ package com.kay.designpatterns.factory.simplefactory;
 
 
 import com.kay.designpatterns.factory.Pizza;
+import com.kay.designpatterns.factory.PizzaType;
 
 /**
  * Simple Factory
@@ -16,12 +17,13 @@ class PizzaStore {
         this.pizzaFactory = pizzaFactory;
     }
 
-    void orderPizza(String type) {
+    void orderPizza(PizzaType type) {
 //        Pizza pizza = new Pizza();
         Pizza pizza = pizzaFactory.createPizza(type);
         pizza.prepare();
         pizza.bake();
         pizza.cut();
+        pizza.box();
     }
 
 }

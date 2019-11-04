@@ -5,6 +5,7 @@ package com.kay.designpatterns.factory;
  * @date 11/4/2019
  **/
 public class VeggiePizza implements Pizza {
+
     @Override
     public void prepare() {
         System.out.println("VeggiePizza prepare");
@@ -20,5 +21,10 @@ public class VeggiePizza implements Pizza {
     public void cut() {
         System.out.println("VeggiePizza cut");
 
+    }
+
+    @Override
+    public void box() {
+        System.out.println("box VeggiePizza");
     }
 }

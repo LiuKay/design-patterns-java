@@ -6,10 +6,15 @@ package com.kay.designpatterns.factory;
  **/
 public interface Pizza {
 
+    // 准备
     void prepare();
 
+    // 烘烤
     void bake();
 
+    // 切块
     void cut();
 
+    // 包装
+    void box();
 }
