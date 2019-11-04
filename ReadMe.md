@@ -58,17 +58,16 @@ For those who are not aware of this, SOLID is an acronym for the first 5 princip
 -----
 ### 创建型模式
 
-- 简单工厂模式
-- 工厂方法模式
-- 抽象工厂模式
-- 建造者模式
+- [简单工厂模式](./src/main/java/com/kay/designpatterns/factory/Factory.md)
+- [工厂方法模式](./src/main/java/com/kay/designpatterns/factory/Factory.md)
+- [建造者模式](./src/main/java/com/kay/designpatterns/builder/Builder.md)
 - 单例模式
 
 ### 结构型模式
 
 - 适配器模式
 - 桥接模式
-- 装饰模式
+- [装饰模式](./src/main/java/com/kay/designpatterns/decorator/Decorator.md)
 - 外观模式
 - 享元模式
 - 代理模式
@@ -77,8 +76,8 @@ For those who are not aware of this, SOLID is an acronym for the first 5 princip
 
 - 命令模式
 - 中介者模式
-- 观察者模式
+- [观察者模式](./src/main/java/com/kay/designpatterns/observer/Oberver.md)
 - 状态模式
-- 策略模式
+- [策略模式](./src/main/java/com/kay/designpatterns/strategy/Strategy.md)
 
 
