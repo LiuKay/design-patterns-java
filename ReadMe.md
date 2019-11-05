@@ -76,7 +76,7 @@ For those who are not aware of this, SOLID is an acronym for the first 5 princip
 
 - 命令模式
 - 中介者模式
-- [观察者模式](./src/main/java/com/kay/designpatterns/observer/Oberver.md)
+- [观察者模式](src/main/java/com/kay/designpatterns/observer/Observer.md)
 - 状态模式
 - [策略模式](./src/main/java/com/kay/designpatterns/strategy/Strategy.md)
 
