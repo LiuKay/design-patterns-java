@@ -2,8 +2,16 @@
 
 ## Design Patterns Practice
 
+> [ https://github.com/LiuKay/design-patterns]( https://github.com/LiuKay/design-patterns )
 
->如何正确地使用设计模式？ - 知乎
+#### 问题：为什么要学习和使用设计模式？
+
+就我个人而言，设计模式相当于一种软件开发设计的“套路”，是现成的一套由前人总结而成的“轮子”，大多数的时候使用它们可以写出容易重用和可维护的代码，这对于我们这些写代码的来说，提供了一种便利，当然你可以理解为“偷懒”。另外一个方面是，大多数优秀的框架或多或少地都使用了这些原则来进行编码( 比如 Spring )，熟悉这些“套路”，你可以知道为什么他们要这么设计和编码，好处是什么。知道 Why 才能从更高的视角去理解 Code。
+
+
+
+
+#### 问题：如何正确地使用设计模式？ - 知乎
 https://www.zhihu.com/question/23757906
 
 
@@ -14,13 +22,9 @@ https://www.zhihu.com/question/23757906
 来源：知乎
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-
 -----
 
-项目结构：
-- ex1,2... ： 示例1,2...
-- template 模板
-- jdk JDK里面的实现
+
 
 ### 设计模式的六大原则
 For those who are not aware of this, SOLID is an acronym for the first 5 principles of object-oriented design:
