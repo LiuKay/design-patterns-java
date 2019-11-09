@@ -92,4 +92,8 @@ For those who are not aware of this, SOLID is an acronym for the first 5 princip
 - 模板方法模式-Template method pattern
 - 访问者模式-Visitor
 
-
+### 学习计划
+参考资料：
+《Head First设计模式》
+《敏捷软件开发：原则、模式与实践》
+《设计模式之美》
