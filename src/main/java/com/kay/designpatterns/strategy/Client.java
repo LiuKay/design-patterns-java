@@ -14,7 +14,7 @@ import com.kay.designpatterns.strategy.ex1.ModelDuck;
  *
  * Created by Kai.L on 8/28/2019
  */
-public class Main {
+public class Client {
     public static void main(String[] args) {
         AbstractDuck model = new ModelDuck();
         model.swim();
