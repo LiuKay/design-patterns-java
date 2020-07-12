@@ -2,7 +2,7 @@
 
 适配器模式将一个接口转换成用户所需要的接口，所解决的问题是接口的不兼容问题。
 
-![](../img/adapter-ex.png)
+![](https://gitee.com/kaybee/markdown_pics/raw/master/img/adapter-ex.png)
 
 
 

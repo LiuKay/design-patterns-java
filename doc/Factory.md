@@ -3,7 +3,7 @@
 
 #### 简单工厂模式
 
-![](../img/simple-factory-ex.png)
+![](https://gitee.com/kaybee/markdown_pics/raw/master/img/simple-factory-ex.png)
 
 如上所示，SimplePizzaFactory 作为一个简单的对象工厂，将所有的产品(Pizza)的生产封装在内部，提供给外部调用。
 
@@ -17,7 +17,7 @@
 工厂方法模式建立了一种生产对象的模板，将简单工厂中由一个对象负责所有具体类实例化的任务，分给了不同的子类来实现。
 工厂方法将实际创建对象的代码与客户使用的代码解耦出来。
 
-![](../img/factory-method-ex.png)
+![](https://gitee.com/kaybee/markdown_pics/raw/master/img/factory-method-ex.png)
 如上图所示为对应代码中工厂方法，PizzaStore 作为一个抽象创建者定义了一个抽象方法，让子类实现类生产具体的对象实例。
 
 
@@ -28,12 +28,12 @@
 #### 抽象工厂模式 Abstract Factory Pattern
 提供一个接口，用于创建相关或依赖的家族，而不需要明确指定具体类。如下为抽象工厂的UML示意图。
 
-![抽象工厂UML-维基百科](../img/Abstract_factory_UML.svg)
+![抽象工厂UML-维基百科](https://gitee.com/kaybee/markdown_pics/raw/master/img/Abstract_factory_UML.svg)
 
 
 
 对应示例代码中的类图如下：
-![对应代码中的结构](../img/absract-factory-ex.png)
+![对应代码中的结构](https://gitee.com/kaybee/markdown_pics/raw/master/img/absract-factory-ex.png)
 
 
 

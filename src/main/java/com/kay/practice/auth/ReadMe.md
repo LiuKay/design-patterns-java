@@ -25,5 +25,5 @@
 - CredentialStorage :  从存储中根据 AppID 获取密码，存储可为不同的实现，可提供默认实现
 - ApiAuthenticator : 对外接口
 
-![auth](../../../../../../../img/auth.png)
+![auth](https://gitee.com/kaybee/markdown_pics/raw/master/img/auth.png)
 
