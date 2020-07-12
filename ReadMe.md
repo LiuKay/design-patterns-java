@@ -29,7 +29,9 @@ https://www.zhihu.com/question/23757906
 
 -----
 
-### 设计模式
+### [1 设计模式之美笔记](https://github.com/LiuKay/design-patterns-java/blob/master/doc/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%BE%8E%E7%AC%94%E8%AE%B0.md)
+
+### 2 设计模式总结
 #### 创建型模式：关于如何创建实例
 
 - [工厂方法模式-Factory Method pattern](./doc/Factory.md)
