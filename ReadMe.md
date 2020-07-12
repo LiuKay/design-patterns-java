@@ -24,8 +24,7 @@ https://www.zhihu.com/question/23757906
 
 -----
 
-![编写高质量的代码](./img/High%20quality%20code.png)
-
+![编写高质量的代码](https://gitee.com/kaybee/markdown_pics/raw/master/img/High quality code.png)
 
 -----
 
