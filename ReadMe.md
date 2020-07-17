@@ -2,7 +2,7 @@
 
 ## Design Patterns Practice
 
-> [ https://github.com/LiuKay/design-patterns]( https://github.com/LiuKay/design-patterns )
+GitHub Pages: [https://liukay.github.io/design-patterns-java/](https://liukay.github.io/design-patterns-java/)
 
 #### 问题：为什么要学习和使用设计模式？
 
