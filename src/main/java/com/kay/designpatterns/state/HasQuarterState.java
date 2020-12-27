@@ -1,10 +1,13 @@
 package com.kay.designpatterns.state;
 
+import java.util.Random;
+
 /**
  * @author kay
  * @date 2020/12/26
  */
 class HasQuarterState implements State {
+    private final Random random = new Random(System.currentTimeMillis());
     private final GumballMachine gumballMachine;
 
     public HasQuarterState(GumballMachine gumballMachine) {
@@ -25,7 +28,12 @@ class HasQuarterState implements State {
     @Override
     public void turnCrank() {
         System.out.println("You turned...");
-        gumballMachine.setCurrentState(gumballMachine.getSoldState());
+        int winner = random.nextInt(10);
+        if ((winner == 0) && gumballMachine.getCount() > 1) {
+            gumballMachine.setCurrentState(gumballMachine.getWinnerState());
+        } else {
+            gumballMachine.setCurrentState(gumballMachine.getSoldState());
+        }
     }
 
     @Override

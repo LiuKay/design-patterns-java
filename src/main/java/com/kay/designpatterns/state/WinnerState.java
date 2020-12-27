@@ -1,13 +1,16 @@
 package com.kay.designpatterns.state;
 
 /**
+ * 新增需求，幸运的胜利者获得2个糖果
+ *
  * @author kay
  * @date 2020/12/26
  */
-class SoldState implements State {
+public class WinnerState implements State {
+
     private final GumballMachine gumballMachine;
 
-    public SoldState(GumballMachine gumballMachine) {
+    public WinnerState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
     }
 
@@ -28,12 +31,18 @@ class SoldState implements State {
 
     @Override
     public void dispense() {
+        System.out.println("YOU ARE A WINNER!You get two gumballs");
         gumballMachine.releaseBall();
-        if (gumballMachine.getCount() > 0) {
-            gumballMachine.setCurrentState(gumballMachine.getNoQuarterState());
-        } else {
-            System.out.println("Oops, out of gumball");
+        if (gumballMachine.isEmpty()) {
             gumballMachine.setCurrentState(gumballMachine.getSoldOutState());
+        } else {
+            gumballMachine.releaseBall();
+            if (gumballMachine.isEmpty()) {
+                System.out.println("Oops, out of gumballs");
+                gumballMachine.setCurrentState(gumballMachine.getSoldOutState());
+            } else {
+                gumballMachine.setCurrentState(gumballMachine.getNoQuarterState());
+            }
         }
     }
 }

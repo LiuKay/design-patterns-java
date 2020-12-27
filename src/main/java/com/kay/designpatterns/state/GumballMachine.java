@@ -1,16 +1,24 @@
 package com.kay.designpatterns.state;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 /**
  * 糖果机 (相当 Context)
  *
  * @author kay
  * @date 2020/12/26
  */
+@Getter
+@Setter
+@ToString(of = {"currentState", "count"})
 public class GumballMachine {
     private State soldOutState;
     private State soldState;
     private State noQuarterState;
     private State hasQuarterState;
+    private State winnerState;
 
     private State currentState;
     private int count;
@@ -20,6 +28,7 @@ public class GumballMachine {
         this.noQuarterState = new NoQuarterState(this);
         this.hasQuarterState = new HasQuarterState(this);
         this.soldState = new SoldState(this);
+        this.winnerState = new WinnerState(this);
         this.count = initCount;
         if (this.count > 0) {
             this.currentState = noQuarterState;
@@ -36,6 +45,7 @@ public class GumballMachine {
 
     public void turnCrank() {
         currentState.turnCrank();
+        currentState.dispense();
     }
 
     void releaseBall() {
@@ -49,51 +59,7 @@ public class GumballMachine {
         return this.currentState == hasQuarterState;
     }
 
-    public State getSoldOutState() {
-        return soldOutState;
-    }
-
-    public void setSoldOutState(State soldOutState) {
-        this.soldOutState = soldOutState;
-    }
-
-    public State getSoldState() {
-        return soldState;
-    }
-
-    public void setSoldState(State soldState) {
-        this.soldState = soldState;
-    }
-
-    public State getNoQuarterState() {
-        return noQuarterState;
-    }
-
-    public void setNoQuarterState(State noQuarterState) {
-        this.noQuarterState = noQuarterState;
-    }
-
-    public State getHasQuarterState() {
-        return hasQuarterState;
-    }
-
-    public void setHasQuarterState(State hasQuarterState) {
-        this.hasQuarterState = hasQuarterState;
-    }
-
-    public State getCurrentState() {
-        return currentState;
-    }
-
-    public void setCurrentState(State currentState) {
-        this.currentState = currentState;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
+    boolean isEmpty() {
+        return count == 0;
     }
 }
